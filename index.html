@@ -17,78 +17,56 @@
 
   <body>
     <section class="bg-[#F1F3FF]">
-      <nav class="fixed top-0 left-0 w-full bg-[#F1F3FF]">
-        <div
-          class="flex justify-between items-center py-4 md:mx-16 "
-        >
-          <a href="index.html">
-            <h4 class="px-4 text-xl font-bold">Binar Car Rental</h4>
-          </a>
-          <ul
-            class="hidden md:flex items-center text-base cursor-pointer font-semibold"
-          >
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Our Service </a>
-            </li>
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Why Us </a>
-            </li>
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Testimonial </a>
-            </li>
-            <li class="hover:text-blue-600 py-4 px-6">
-              <a href="#"> Contact </a>
-            </li>
-            <a
-              href="#"
-              class="bg-[#5CB85F] font-semibold text-white py-2 px-3 hover:shadow-lg hover:opacity-80"
-              >Registrasi</a
-            >
-          </ul>
-
-          <button
-            class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none group"
-          >
-            <i class="uil uil-bars"></i>
-            <div class="w-5 h-1 mb-1"></div>
-            <div class="w-5 h-1 mb-1"></div>
-            <div class="w-5 h-1"></div>
-            <div
-              class="absolute top-0 opacity-0 h-screen w-6/12 bg-white border transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
-            >
-              <ul
-                class="flex flex-col items-center w-full text-base cursor-pointer pt-5"
-              >
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Our Service </a>
+      <nav class="fixed top-0 left-0 w-full z-10 bg-[#F1F3FF] shadow-md">
+        <!-- component -->    
+        <div class="container px-5 sm:px-16 mx-auto flex flex-wrap items-center justify-between">
+            <a href="#" class="flex">
+              <img src="./images/binar.png" class="w-36" >
+            </a>
+            <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+            <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="#service" class=" hover:bg-gray-50 border-b border-gray-300 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 my-3 md:hover:text-blue-700 md:p-0">Our Service</a>
                 </li>
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Why Us </a>
+                <li>
+                <a href="#why" class=" hover:bg-gray-50 border-b border-gray-300 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 my-3 md:hover:text-blue-700 md:p-0">Why Us</a>
                 </li>
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Testimonial </a>
+                <li>
+                <a href="#testi" class=" hover:bg-gray-50 border-b border-gray-300 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 my-3 md:hover:text-blue-700 md:p-0">Testimonials</a>
                 </li>
-                <li class="hover:text-blue-600 py-4 px-6 w-full">
-                  <a href="#"> Contact </a>
+                <li>
+                <a href="#faq" class="hover:bg-gray-50 border-b border-gray-300 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:my-3 md:hover:text-blue-700 md:p-0">FAQ</a>
                 </li>
-                <a
-                  href="#"
-                  class="bg-[#5CB85F] font-semibold text-white py-2 px-2 hover:shadow-lg hover:opacity-80"
-                  >Registrasi</a
-                >
-              </ul>
+                <li class="">
+                  <button class="flex justify-items-center mx-auto hover:bg-gray-50 py-6 md:hover:bg-transparent md:border-0 pl-3 pr-4 md:hover:text-blue-700 md:p-0">
+                    <a
+                      href="#"
+                      class="bg-[#5CB85F] font-semibold text-white py-3 px-7 hover:shadow-lg hover:opacity-60"
+                      >Register</a
+                    >
+                  </button>
+                </li>   
+            </ul>
             </div>
-          </button>
         </div>
-      </nav>
+    </nav>
+</div>
 
-      <!--- ================== END OF NAVBAR ================== -->
+<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    </section>
+
+      <!--- ================== HERO ================== -->
 
       <!--flex (pembungkus elemen dalam section) : mudah mengatur posisi didlmnya (flex-wrap : tidak harus sejajar dengan satu baris)-->
       <!--- id : digunakan agar terpanggil jika diarahkan ke navigasi-->
       <section
-        id=""
-        class="sm:pt- pt-20 md:pl-20 gap-32 md:grid grid-cols-2 mx-auto"
+        id="hero"
+        class="pt-32 md:pl-20 gap-32 md:grid grid-cols-2 mx-auto bg-[#F1F3FF]"
       >
         <div class="px-4 pl-5">
           <div class="m-auto w-full">
@@ -103,13 +81,13 @@
                 kebutuhanmu untuk sewa mobil selama 24 jam.
               </p>
             </div>
-            <div>
+            <button>
               <a
                 href="#"
-                class="bg-[#5CB85F] font-semibold text-white py-4 px-3 hover:shadow-lg hover:opacity-80"
+                class="bg-[#5CB85F] font-semibold text-white py-4 px-3 hover:shadow-lg hover:opacity-60"
                 >Mulai Sewa Mobil</a
               >
-            </div>
+            </button>
           </div>
         </div>
         <div class="w-full mt-10">
@@ -118,10 +96,10 @@
       </section>
     </section>
 
-    <!--- ================== END OF HEADER ================== -->
+    <!--- ================== OUR SERVICE ================== -->
 
     <section class="pt-12">
-      <div
+      <div id="service"
         class="container max-w-6xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
       >
         <div class="mt-10">
@@ -161,9 +139,9 @@
       </div>
     </section>
 
-    <!--- ================== END OF HEADER ================== -->
-    <section class="py-16">
-      <h1 class="font-bold text-2xl pb-5 text-center">Why Us ?</h1>
+    <!--- ================== WHYY US ================== -->
+    <section id="why" class="py-16">
+      <h1 class="font-bold text-3xl pb-5 text-center">Why Us ?</h1>
       <p class="text-center pb-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam,
         perspiciatis placeat exercitationem.
@@ -174,9 +152,9 @@
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow "
         >
-          <img src="./images/ceklist.png" />
-          <h1 class="font-bold">Layanan 24 Jam</h1>
-          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+          <img class="pb-1" src="./images/oke.png" />
+          <h1 class="font-bold pb-1">Layanan 24 Jam</h1>
+          <p class="mb-3 font-normal text-gray-600">
             Go to this step by step guideline process on how to certify for your
             weekly benefits.
           </p>
@@ -184,9 +162,9 @@
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow "
         >
-          <img src="./images/ceklist.png" />
-          <h1 class="font-bold">Layanan 24 Jam</h1>
-          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+          <img src="./images/price.png" />
+          <h1 class="font-bold py-1">Layanan 24 Jam</h1>
+          <p class="mb-3 font-normal text-gray-600">
             Go to this step by step guideline process on how to certify for your
             weekly benefits.
           </p>
@@ -194,9 +172,9 @@
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow "
         >
-          <img src="./images/ceklist.png" />
-          <h1 class="font-bold">Layanan 24 Jam</h1>
-          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+          <img src="./images/jam.png" />
+          <h1 class="font-bold py-1">Layanan 24 Jam</h1>
+          <p class="mb-3 font-normal text-gray-600">
             Go to this step by step guideline process on how to certify for your
             weekly benefits.
           </p>
@@ -204,9 +182,9 @@
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
         >
-          <img src="./images/Ellipse 7.png" />
-          <h1 class="font-bold">Layanan 24 Jam</h1>
-          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+          <img src="./images/award.png" />
+          <h1 class="font-bold py-1">Layanan 24 Jam</h1>
+          <p class="mb-3 font-normal text-gray-600">
             Go to this step by step guideline process on how to certify for your
             weekly benefits.
           </p>
@@ -230,7 +208,7 @@
         </p>
         <div class="py-10">
           <button
-            class="py-3 bg-green-400 rounded-sm px-5 font-bold text-white"
+            class="py-3 bg-green-400 hover:opacity-80 rounded-sm px-5 font-bold text-white"
           >
             Mulai Sewa Mobil
           </button>
@@ -239,81 +217,164 @@
     </section>
 
     <!--testi-->
-    <section>
-      <div class="max-w-4xl mx-auto">
-        <h1 class="font-bold text-2xl text-center py-7">Testimonials</h1>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-        <div id="default-carousel" class="relative" data-carousel="static">
-           
-              <div class="overflow-hidden relative h-36 rounded-lg sm:h-64 xl:h-80 2xl:h-96 bg-[#F1F3FF]">
-                  <div class="flex justify-center duration-700 ease-in-out" data-carousel-item>
-                    <div class="flex md:justify-between md:py-28 items-center absolute container max-w-2xl">
-                      <div class="w-full"><img src="./images/Ellipse 10.png" /></div>
-                      <div>
-                        <img src="./images/Star 3.png" />
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe velit cupiditate magnam aliquam voluptatem, rerum eaque maxime iusto iste 
-                          perspiciatis totam facilis alias ipsam incidunt repudiandae.</p>
-                        <p class="font-bold">john Doe</p>
-                      </div>
-                      
+    <section id="testi" class="">
+     
+	  <div class="mx-auto text-center pt-16">
+          <h2 class="mb-4 text-3xl font-bold">Testimonial</h2>
+          <p class="mb-4 pb-2 md:mb-12 md:pb-0">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="mx-6 mt-8 lg:col-span-2 lg:mx-0">
+          <div class="swiper-container !overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                >
+                  <div class="grid grid-cols-1 mx-auto justify-items-center">
+                    <div class="">
+                      <img class="" src="./images/photo2.png" />
+                    </div>
+                    <div class="mt-4 grid mx-auto justify-items-center">
+                      <img src="./images/star.png" />
+                      <p class="mt-4 text-center text-lg text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsam cumque recusandae dolorum porro, quasi sunt
+                        necessitatibus dolorem ab laudantium veli.
+                      </p>
                     </div>
                   </div>
-                 
-                  <div class="flex justify-center duration-700 ease-in-out" data-carousel-item>
-                    <div class="flex md:justify-between md:py-28 items-center absolute container max-w-2xl">
-                      <div class="w-full"><img src="./images/Ellipse 10.png" /></div>
-                      <div>
-                        <img src="./images/ceklist.png" />
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe velit cupiditate magnam aliquam voluptatem, rerum eaque maxime iusto iste 
-                          perspiciatis totam facilis alias ipsam incidunt repudiandae.</p>
-                        <p class="font-bold">john Doe</p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                 
-                  <div class="flex justify-center duration-700 ease-in-out" data-carousel-item>
-                    <div class="flex md:justify-between md:py-28 items-center absolute container max-w-2xl">
-                      <div class="w-full"><img src="./images/Ellipse 10.png" /></div>
-                      <div>
-                        <img src="./images/ceklist.png" />
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe velit cupiditate magnam aliquam voluptatem, rerum eaque maxime iusto iste 
-                          perspiciatis totam facilis alias ipsam incidunt repudiandae.</p>
-                        <p class="font-bold">john Doe</p>
-                      </div>
-                      
-                    </div>
-                  </div>
+                  <div class="mt-8 font-bold text-center">John Doe 32, Bromo</div>
+                </div>
               </div>
-              
-              
-              <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              <div class="swiper-slide">
+                <div
+                  class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                >
+                  <div class="grid grid-cols-1 mx-auto justify-items-center">
+                    <div class="">
+                      <img class="" src="./images/photo2.png" />
+                    </div>
+                    <div class="mt-4 grid mx-auto justify-items-center">
+                      <img src="./images/star.png" />
+                      <p class="mt-4 text-center text-lg text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsam cumque recusandae dolorum porro, quasi sunt
+                        necessitatibus dolorem ab laudantium veli.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-8 font-bold text-center">John Doe 32, Bromo</div>
+                </div>
               </div>
-             
-              <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                      <svg class="w-5 h-5 text-gray sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                      <span class="hidden">Anterior</span>
-                  </span>
-              </button>
-              <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                      <svg class="w-5 h-5 text-gray sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                      <span class="hidden">Siguiente</span>
-                  </span>
-              </button>
+              <div class="swiper-slide">
+                <div
+                  class="flex h-full flex-col justify-between bg-[#F1F3FF] p-12"
+                >
+                  <div class="grid grid-cols-1 mx-auto justify-items-center">
+                    <div class="">
+                      <img class="" src="./images/photo2.png" />
+                    </div>
+                    <div class="mt-4 grid mx-auto justify-items-center">
+                      <img src="./images/star.png" />
+                      <p class="mt-4 text-center text-lg text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsam cumque recusandae dolorum porro, quasi sunt
+                        necessitatibus dolorem ab laudantium veli.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-8 font-bold text-center">John Doe 32, Bromo</div>
+                </div>
+              </div>
+            </div>
           </div>
-      
-          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+        <div class="mt-8 gap-4 lg:mt-6 items-center text-center">
+          <button
+            class="prev-button rounded-full border border-current p-3 text-green-400 transition-colors focus:bg-green-400 focus:text-white focus:outline-none"
+          >
+            <span class="sr-only">Previous Slide</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 -rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="next-button rounded-full border border-current p-3 text-green-400 focus:bg-green-400 focus:text-white focus:outline-none"
+          >
+            <span class="sr-only">Next Slide</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper-container", {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 32,
+          autoplay: {
+            delay: 8000,
+          },
+          navigation: {
+            nextEl: ".next-button",
+            prevEl: ".prev-button",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1.5,
+              centeredSlides: true,
+            },
+            1024: {
+              centeredSlides: false,
+              slidesPerView: 2.25,
+            },
+          },
+        });
+      });
+    </script>
       
     </section>
-    <section class=" py-10">
+    <!-- faq -->
+    <section id="faq" class=" py-3">
       <div
-        class="container max-w-7xl mx-auto grid md:grid-cols-2 w-full justify-items-center"
+        class="container max-w-7xl mx-auto grid  w-full justify-items-center"
       >
         <div class="pt-20 items-center">
           <p class="font-bold text-2xl pl-5">Frequently Asked Question</p>
@@ -335,7 +396,7 @@
                 class="absolute peer opacity-0"
               />
               <!--Heading-->
-              <label for="input1" class="text-sm mx-5 h-12 flex items-center"
+              <label for="input1" class=" text-sm mx-5 h-12 flex items-center"
                 >Apa saja syarat yang dibutuhkan?</label
               >
               <!--Arrow-->
@@ -345,8 +406,8 @@
                 <i class="uil uil-angle-down"></i>
               </div>
               <!--content-->
-              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
-                <p class="p-4 text-sm">
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full rounded-b-md">
+                <p class="p-4 text-sm bg-blue-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   nihil doloribus voluptate ea molestiae! Non quod, similique
                   omnis maiores blanditiis voluptatem pariatur eaque aut quia
@@ -366,7 +427,7 @@
                 class="absolute peer opacity-0"
               />
               <!--Heading-->
-              <label for="input2" class="text-sm mx-5 h-12 flex items-center"
+              <label for="input2" class="text-sm  mx-5 h-12 flex items-center"
                 >Berapa hari minimal sewa mobil lepas kunci?</label
               >
               <!--Arrow-->
@@ -376,8 +437,8 @@
                 <i class="uil uil-angle-down"></i>
               </div>
               <!--content-->
-              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
-                <p class="p-5 text-sm">
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full rounded-b-md">
+                <p class="p-5 text-sm bg-blue-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   nihil doloribus voluptate ea molestiae! Non quod, similique
                   omnis maiores blanditiis voluptatem pariatur eaque aut quia
@@ -407,8 +468,8 @@
                 <i class="uil uil-angle-down"></i>
               </div>
               <!--content-->
-              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
-                <p class="p-5 text-sm">
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full rounded-b-md">
+                <p class="p-5 text-sm bg-blue-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   nihil doloribus voluptate ea molestiae! Non quod, similique
                   omnis maiores blanditiis voluptatem pariatur eaque aut quia
@@ -438,8 +499,8 @@
                 <i class="uil uil-angle-down"></i>
               </div>
               <!--content-->
-              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
-                <p class="p-5 text-sm">
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full rounded-b-md">
+                <p class="p-5 text-sm bg-blue-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   nihil doloribus voluptate ea molestiae! Non quod, similique
                   omnis maiores blanditiis voluptatem pariatur eaque aut quia
@@ -459,7 +520,7 @@
                 class="absolute peer opacity-0"
               />
               <!--Heading-->
-              <label for="input5" class="text-sm mx-5 h-12 flex items-center"
+              <label for="input5" class="text-sm mx-5 h-12 flex items-center "
                 >Bagaimana jika terjadi kecelakaan</label
               >
               <!--Arrow-->
@@ -469,8 +530,8 @@
                 <i class="uil uil-angle-down"></i>
               </div>
               <!--content-->
-              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
-                <p class="p-5 text-sm">
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full rounded-b-md">
+                <p class="p-5 text-sm bg-blue-300">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                   nihil doloribus voluptate ea molestiae! Non quod, similique
                   omnis maiores blanditiis voluptatem pariatur eaque aut quia
@@ -481,6 +542,77 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- FOOTER -->
+    <section>
+      
+<footer class="p-4 sm:p-6 bg-[#F1F3FF] shadow-lg mt-16">
+  <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <img src="./images/binar.png" class="w-36" alt="FlowBite Logo" />
+              
+          </a>
+      </div>
+      <div class="grid grid-cols-2 gap-10 sm:gap-4 sm:grid-cols-3 pl-16 ">
+          <div>
+              <ul class="">
+                <li class="mb-4 md:mr-36">
+                  <a href="">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000 </a>
+                </li>
+                  <li class="mb-4">
+                      <a href="">Binarentalcar@gmail.com</a>
+                  </li>
+                  <li>
+                      <a href="" class="hover:underline">0896754209</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="">Our Services</a>
+                </li>
+                  <li class="mb-4">
+                      <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Why Us</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">FAQ</a>
+                </li>
+              </ul>
+          </div>
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <img src="./images/facebook.png" >
+                
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <img src="./images/instagram.png" >
+                
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <img src="./images/message.png" >
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <img src="./images/twitch.png">
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <img src="./images/twitter.png">
+            </a>
+        </div>
+      </div>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <div class="text-center">
+      <span class="text-sm ">© 2023 <a href="https://flowbite.com/" class="hover:underline">Binar</a>. All Rights Reserved.
+      </span>
+
+  </div>
+</footer>
+
     </section>
   </body>
 </html>
